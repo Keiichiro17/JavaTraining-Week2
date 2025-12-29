@@ -11,24 +11,27 @@ class LibraryApp{
       System.out.println("2:一覧表示");
       System.out.println("3:削除");
       System.out.println("0:終了");
-      System.out.print("選択")
+      System.out.print("選択");
 
       int choice=sc.nextInt();
-      sc.nextline();
+      sc.nextLine();
 
       if(choice==1){
         System.out.print("タイトル: ");
         String title=sc.nextLine();
 
         System.out.print("著者: ")
-        String author=sc.nextInt();
+        String author=sc.nextLine();
         sc.nextline();
 
         System.out.print("出版年": ");
         int year=sc.nextInt();
         sc.nextline();
 
-        Book book=newBook(title,author,year);
+        Book book=new Book(title,author,year);
+        library.addbook(book);
+        System.out.println("登録しました。")
+        
       }else if (choice==2){
       library.showBooks();
         
