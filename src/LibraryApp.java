@@ -7,7 +7,48 @@ class LibraryApp{
     Library library=new Library();
 
     while(true){
-      //ここにメニュー表示を書く
+      System.out.println("1:書籍を登録");
+      System.out.println("2:一覧表示");
+      System.out.println("3:削除");
+      System.out.println("0:終了");
+      System.out.print("選択")
+
+      int choice=sc.nextInt();
+      sc.nextline();
+
+      if(choice==1){
+        System.out.print("タイトル: ");
+        String title=sc.nextLine();
+
+        System.out.print("著者: ")
+        String author=sc.nextInt();
+        sc.nextline();
+
+        System.out.print("出版年": ");
+        int year=sc.nextInt();
+        sc.nextline();
+
+        Book book=newBook(title,author,year);
+      }else if (choice==2){
+      library.showBooks();
+        
+      }else if(choice==3){
+        System.out.print("削除する番号: ")
+        int num =sc.nextInt();
+        sc.nextline();
+
+        if(!library.removeBook(num)){
+          System.out.println("削除できませんでした");
+        }
+
+      }else if (choice==0){
+        System.out.println("終了します");
+        break:
+          }
+    }
+  }
+}
+
     }
   }
 }
