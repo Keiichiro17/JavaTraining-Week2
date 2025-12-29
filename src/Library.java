@@ -8,6 +8,9 @@ class Library{
 // TODO: booksにbookを追加する
   }
   void showBooks(){
+    if(Book==0){
+      System.out.println("登録されている書籍はありません")
+        }else{
     //To do:
     //1)0件なら「登録されている書籍はありません」みたいに表示
     //2)1件以上なら、番号付きで一覧表示（1番から）
