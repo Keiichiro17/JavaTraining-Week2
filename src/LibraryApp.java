@@ -7,11 +7,11 @@ class LibraryApp{
     Library library=new Library();
 
     while(true){
-      System.out.println("1:書籍を登録");
-      System.out.println("2:一覧表示");
-      System.out.println("3:削除");
+      System.out.println("図書管理システム");
+      System.out.println("1:書籍を登録する");
+      System.out.println("2:登録済みの書籍を一覧表示する");
+      System.out.println("3:書籍を削除する");
       System.out.println("0:終了");
-      System.out.print("選択");
 
       int choice=sc.nextInt();
       sc.nextLine();
@@ -44,7 +44,7 @@ class LibraryApp{
         }
 
       }else if (choice==0){
-        System.out.println("終了します");
+        System.out.println("終了");
         break;
         
       }else{
