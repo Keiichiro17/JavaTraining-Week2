@@ -14,31 +14,30 @@ class LibraryApp{
       System.out.print("選択");
 
       int choice=sc.nextInt();
-      sc.nextline();
+      sc.nextLine();
 
       if(choice==1){
         System.out.print("タイトル: ");
-        String title=sc.nextline();
+        String title=sc.nextLine();
 
         System.out.print("著者: ");
-        String author=sc.nextline();
-        sc.nextline();
+        String author=sc.nextLine();
 
         System.out.print("出版年: ");
         int year=sc.nextInt();
-        sc.nextline();
+        sc.nextLine();
 
         Book book=new Book(title,author,year);
         library.addBook(book);
-        System.out.println("登録しました。")
+        System.out.println("登録しました。");
         
       }else if (choice==2){
       library.showBooks();
         
       }else if(choice==3){
-        System.out.print("削除する番号: ")
+        System.out.print("削除する番号: ");
         int num =sc.nextInt();
-        sc.nextline();
+        sc.nextLine();
 
         if(!library.removeBook(num)){
           System.out.println("削除できませんでした");
