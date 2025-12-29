@@ -18,18 +18,18 @@ class LibraryApp{
 
       if(choice==1){
         System.out.print("タイトル: ");
-        String title=sc.nextLine();
+        String title=sc.nextline();
 
-        System.out.print("著者: ")
-        String author=sc.nextLine();
+        System.out.print("著者: ");
+        String author=sc.nextline();
         sc.nextline();
 
-        System.out.print("出版年": ");
+        System.out.print("出版年: ");
         int year=sc.nextInt();
         sc.nextline();
 
         Book book=new Book(title,author,year);
-        library.addbook(book);
+        library.addBook(book);
         System.out.println("登録しました。")
         
       }else if (choice==2){
@@ -46,13 +46,9 @@ class LibraryApp{
 
       }else if (choice==0){
         System.out.println("終了します");
-        break:
-          }
+      }
     }
-  }
-}
-
-    }
+    sc.close();
   }
 }
 
