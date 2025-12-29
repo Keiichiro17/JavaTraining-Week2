@@ -4,29 +4,30 @@ class Library{
   ArrayList <Book> books = new ArrayList<>();
   
   void addBook(Book book){
-    
-// TODO: booksにbookを追加する
+    books.add(book);
   }
   void showBooks(){
-    if(Book==0){
+    if(Books.size()==0){
       System.out.println("登録されている書籍はありません")
         }else{
-    //To do:
-    //1)0件なら「登録されている書籍はありません」みたいに表示
-    //2)1件以上なら、番号付きで一覧表示（1番から）
-    //例："1:タイトル/著者/出版年"
+      for(int i=0;i<books.size();i++){
+        Book b=books.get(i);
+        System.out.println((i+1)+":"+b.tiile+"/"+b.author+"/"+b.year);
+      }
+    }
   }
   boolean removeBook(int number){
-    //To do:
-    //1)numberをindex=number-1に変換
-    //2)範囲チェック(1未満or件数より大きい→false)
-    //3)削除できたらtrue
+    int index=number-1;
+    
+    if(number<1||number>
+       books.size()){
     return false;
   }
-
+  books.remove(index);
+  return true;
+  }
   int size(){
-    //To do:登録冊数を返す
-    return 0;
+    return books.size();
   }
   }
   
