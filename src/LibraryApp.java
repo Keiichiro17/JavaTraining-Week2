@@ -14,7 +14,7 @@ class LibraryApp{
       System.out.print("選択");
 
       int choice=sc.nextInt();
-      sc.nextLine();
+      sc.nextline();
 
       if(choice==1){
         System.out.print("タイトル: ");
@@ -46,6 +46,10 @@ class LibraryApp{
 
       }else if (choice==0){
         System.out.println("終了します");
+        break;
+        
+      }else{
+      System.out.println("0~3を入力してください");
       }
     }
     sc.close();
