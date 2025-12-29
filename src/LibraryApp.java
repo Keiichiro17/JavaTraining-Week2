@@ -1,11 +1,16 @@
-public class LibraryApp{
-  public static void main(String[] args)
+import java.util.Scanner;
+class LibraryApp{
+  public static void main(String[]args)
   {
-    Book b = new Book();
-    b.title="Java入門";
-    b.author="山田";
-    b.year=2023;
-    System.out.println(b.title);
+    Scanner sc=new
+      Scanner(System.in);
+    Library library=new Library();
+
+    while(true){
+      //ここにメニュー表示を書く
+    }
   }
 }
+
+  
 
