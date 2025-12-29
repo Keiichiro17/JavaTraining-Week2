@@ -5,7 +5,7 @@ class Book{
 
   BooK(String title, String author, int year){
 this.title=title;
-this author = author;
+this.author = author;
 this.year=year;
   }
 }
