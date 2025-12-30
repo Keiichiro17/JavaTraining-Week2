@@ -6,4 +6,8 @@ javac-encoding UTF-8 Book.java Library.java LibraryApp.java→java LibraryApp
 
 ※Powershellで文字化けが発生したので932(Shift_JIS)から65001(UTF-8)に変更
 
+Bookは書籍1冊を表してタイトル、著者、出版年をフィールドに持たせた。
+Libraryは書籍を登録、保存、一覧表示、削除できるようにした。
+LibraryAppはメニューを表示し、ユーザー入力を受け付けるようにした。
 
+追加機能　LibraryAppでユーザーが0~3以外を入力した場合0~3を入力してくださいと表示されるようにした。
